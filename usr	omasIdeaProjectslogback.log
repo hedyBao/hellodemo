@@ -1,0 +1,238 @@
+11:52:47.358 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - Starting HelloDemoApplicaiton on tomasgaodeMacBook-Pro.local with PID 85716 (/Users/tomas/workspace/hellodemo/target/classes started by tomas in /Users/tomas/workspace/hellodemo)
+11:52:47.369 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - No active profile set, falling back to default profiles: default
+11:52:49.668 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+11:52:49.699 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:52:49.769 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:52:49.769 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+11:52:50.017 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:52:50.017 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2542 ms
+11:52:50.580 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:52:50.967 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:52:51.002 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+11:52:51.005 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - Started HelloDemoApplicaiton in 4.534 seconds (JVM running for 6.418)
+11:52:55.705 logback [Thread-13] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+16:25:53.985 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - Starting HelloDemoApplicaiton on tomasgaodeMacBook-Pro.local with PID 87376 (/Users/tomas/workspace/hellodemo/target/classes started by tomas in /Users/tomas/workspace/hellodemo)
+16:25:54.017 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - No active profile set, falling back to default profiles: default
+16:25:55.944 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:25:55.958 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:25:55.969 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:25:55.969 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:25:56.064 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:25:56.065 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1913 ms
+16:25:56.696 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:25:57.107 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:25:57.135 logback [main] ERROR o.apache.catalina.util.LifecycleBase - Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.baobao.hellodemo.HelloDemoApplicaiton.main(HelloDemoApplicaiton.java:13)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1103)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1189)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+16:25:57.142 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+16:25:57.142 logback [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+16:25:57.147 logback [main] INFO  o.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+16:25:57.148 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+16:25:57.148 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+16:25:57.151 logback [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:25:57.155 logback [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+16:25:57.159 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+16:26:41.965 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - Starting HelloDemoApplicaiton on tomasgaodeMacBook-Pro.local with PID 87391 (/Users/tomas/workspace/hellodemo/target/classes started by tomas in /Users/tomas/workspace/hellodemo)
+16:26:41.972 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - No active profile set, falling back to default profiles: default
+16:26:43.933 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:26:43.947 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:26:43.958 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:26:43.959 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:26:44.050 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:26:44.051 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1950 ms
+16:26:44.642 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:26:45.040 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:26:45.085 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:26:45.089 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - Started HelloDemoApplicaiton in 3.645 seconds (JVM running for 5.016)
+16:27:15.865 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:27:15.867 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:27:15.878 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+16:27:15.929 logback [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:27:26.902 logback [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:28:31.303 logback [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.baobao.hellodemo.controller.LoginResponse com.baobao.hellodemo.controller.LoginController.login(com.baobao.hellodemo.entity.LoginUser)]
+16:29:44.356 logback [Thread-11] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+16:29:44.360 logback [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16:29:44.378 logback [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16:29:51.158 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - Starting HelloDemoApplicaiton on tomasgaodeMacBook-Pro.local with PID 87442 (/Users/tomas/workspace/hellodemo/target/classes started by tomas in /Users/tomas/workspace/hellodemo)
+16:29:51.180 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - No active profile set, falling back to default profiles: default
+16:29:53.244 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:29:53.259 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:29:53.269 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:29:53.270 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:29:53.365 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:29:53.365 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2031 ms
+16:29:53.951 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:29:54.372 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:29:54.410 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:29:54.414 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - Started HelloDemoApplicaiton in 3.88 seconds (JVM running for 5.453)
+16:30:01.590 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:30:01.590 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:30:01.609 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 19 ms
+16:30:01.662 logback [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.baobao.hellodemo.controller.LoginResponse com.baobao.hellodemo.controller.LoginController.login(com.baobao.hellodemo.entity.LoginUser)]
+16:35:02.428 logback [Thread-11] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+16:35:08.986 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - Starting HelloDemoApplicaiton on tomasgaodeMacBook-Pro.local with PID 87530 (/Users/tomas/workspace/hellodemo/target/classes started by tomas in /Users/tomas/workspace/hellodemo)
+16:35:08.991 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - No active profile set, falling back to default profiles: default
+16:35:11.197 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:35:11.217 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:35:11.233 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:35:11.237 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:35:11.345 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:35:11.345 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2213 ms
+16:35:11.993 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:35:12.404 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:35:12.448 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:35:12.454 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - Started HelloDemoApplicaiton in 4.388 seconds (JVM running for 5.982)
+16:36:01.634 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:36:01.636 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:36:01.660 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 24 ms
+16:36:01.761 logback [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:36:06.853 logback [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:36:17.835 logback [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.baobao.hellodemo.controller.LoginResponse com.baobao.hellodemo.controller.LoginController.login(com.baobao.hellodemo.entity.LoginUser)]
+16:36:17.860 logback [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.baobao.hellodemo.controller.LoginResponse com.baobao.hellodemo.controller.LoginController.login(com.baobao.hellodemo.entity.LoginUser)]
+16:36:17.925 logback [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.baobao.hellodemo.controller.LoginResponse com.baobao.hellodemo.controller.LoginController.login(com.baobao.hellodemo.entity.LoginUser)]
+16:36:18.545 logback [http-nio-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.baobao.hellodemo.controller.LoginResponse com.baobao.hellodemo.controller.LoginController.login(com.baobao.hellodemo.entity.LoginUser)]
+16:49:19.753 logback [Thread-12] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+16:49:19.758 logback [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16:49:19.775 logback [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16:49:24.262 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - Starting HelloDemoApplicaiton on tomasgaodeMacBook-Pro.local with PID 87740 (/Users/tomas/workspace/hellodemo/target/classes started by tomas in /Users/tomas/workspace/hellodemo)
+16:49:24.267 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - No active profile set, falling back to default profiles: default
+16:49:25.868 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:49:25.880 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:49:25.888 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:49:25.889 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:49:25.970 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:49:25.971 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1589 ms
+16:49:26.460 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:49:26.795 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:49:26.829 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:49:26.833 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - Started HelloDemoApplicaiton in 3.171 seconds (JVM running for 4.751)
+16:49:43.828 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:49:43.828 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:49:43.840 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+16:49:43.883 logback [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.baobao.hellodemo.controller.LoginResponse com.baobao.hellodemo.controller.LoginController.login(com.baobao.hellodemo.entity.LoginUser)]
+16:51:09.904 logback [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.baobao.hellodemo.controller.LoginResponse com.baobao.hellodemo.controller.LoginController.login(com.baobao.hellodemo.entity.LoginUser)]
+16:55:47.920 logback [http-nio-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.baobao.hellodemo.controller.LoginResponse com.baobao.hellodemo.controller.LoginController.login(com.baobao.hellodemo.entity.LoginUser)]
+17:00:42.005 logback [http-nio-8080-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.baobao.hellodemo.controller.LoginResponse com.baobao.hellodemo.controller.LoginController.login(com.baobao.hellodemo.entity.LoginUser)]
+17:08:04.825 logback [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.baobao.hellodemo.controller.LoginResponse com.baobao.hellodemo.controller.LoginController.login(com.baobao.hellodemo.entity.LoginUser)]
+17:09:16.274 logback [Thread-10] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+17:09:22.033 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - Starting HelloDemoApplicaiton on tomasgaodeMacBook-Pro.local with PID 88049 (/Users/tomas/workspace/hellodemo/target/classes started by tomas in /Users/tomas/workspace/hellodemo)
+17:09:22.036 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - No active profile set, falling back to default profiles: default
+17:09:23.739 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+17:09:23.751 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:09:23.760 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:09:23.761 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+17:09:23.846 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:09:23.846 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1710 ms
+17:09:24.334 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+17:09:24.668 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:09:24.702 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+17:09:24.706 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - Started HelloDemoApplicaiton in 3.233 seconds (JVM running for 4.731)
+17:09:48.803 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:09:48.805 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:09:48.827 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 22 ms
+17:09:48.902 logback [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:09:49.498 logback [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:09:58.358 logback [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.baobao.hellodemo.controller.LoginResponse com.baobao.hellodemo.controller.LoginController.login(com.baobao.hellodemo.entity.LoginUser)]
+17:16:12.261 logback [Thread-10] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+17:16:12.269 logback [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:16:12.295 logback [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:16:18.620 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - Starting HelloDemoApplicaiton on tomasgaodeMacBook-Pro.local with PID 88151 (/Users/tomas/workspace/hellodemo/target/classes started by tomas in /Users/tomas/workspace/hellodemo)
+17:16:18.624 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - No active profile set, falling back to default profiles: default
+17:16:20.433 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+17:16:20.448 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:16:20.459 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:16:20.459 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+17:16:20.552 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:16:20.552 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1786 ms
+17:16:21.540 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+17:16:22.311 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:16:22.345 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+17:16:22.349 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - Started HelloDemoApplicaiton in 4.234 seconds (JVM running for 5.629)
+17:16:46.378 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:16:46.380 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:16:46.401 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 20 ms
+17:16:46.448 logback [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.baobao.hellodemo.controller.LoginResponse com.baobao.hellodemo.controller.LoginController.login(com.baobao.hellodemo.entity.LoginUser)]
+17:18:24.910 logback [Thread-12] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+17:22:18.655 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - Starting HelloDemoApplicaiton on tomasgaodeMacBook-Pro.local with PID 88285 (/Users/tomas/workspace/hellodemo/target/classes started by tomas in /Users/tomas/workspace/hellodemo)
+17:22:18.673 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - No active profile set, falling back to default profiles: default
+17:22:20.843 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+17:22:20.859 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:22:20.869 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:22:20.870 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+17:22:20.970 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:22:20.970 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2146 ms
+17:22:21.523 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+17:22:21.902 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:22:21.938 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+17:22:21.942 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - Started HelloDemoApplicaiton in 3.883 seconds (JVM running for 5.597)
+17:22:38.177 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:22:38.177 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:22:38.186 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+17:22:38.223 logback [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.baobao.hellodemo.controller.LoginResponse com.baobao.hellodemo.controller.LoginController.login(com.baobao.hellodemo.entity.LoginUser)]
+17:24:00.990 logback [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.baobao.hellodemo.controller.LoginResponse com.baobao.hellodemo.controller.LoginController.login(com.baobao.hellodemo.entity.LoginUser)]
+17:24:10.180 logback [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.baobao.hellodemo.controller.LoginResponse com.baobao.hellodemo.controller.LoginController.login(com.baobao.hellodemo.entity.LoginUser)]
+20:33:54.684 logback [Thread-11] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+20:34:00.347 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - Starting HelloDemoApplicaiton on tomasgaodeMacBook-Pro.local with PID 88437 (/Users/tomas/workspace/hellodemo/target/classes started by tomas in /Users/tomas/workspace/hellodemo)
+20:34:00.351 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - No active profile set, falling back to default profiles: default
+20:34:02.504 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:34:02.521 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:34:02.534 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:34:02.535 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+20:34:02.638 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:34:02.639 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2107 ms
+20:34:03.235 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:34:03.675 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+20:34:03.713 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+20:34:03.716 logback [main] INFO  c.b.hellodemo.HelloDemoApplicaiton - Started HelloDemoApplicaiton in 3.961 seconds (JVM running for 5.37)
+20:34:32.780 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:34:32.781 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:34:32.791 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+20:34:32.828 logback [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.baobao.hellodemo.controller.LoginResponse com.baobao.hellodemo.controller.LoginController.login(com.baobao.hellodemo.entity.LoginUser)]
+20:35:14.745 logback [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:35:15.371 logback [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:45:34.509 logback [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m19s8ms).
+20:45:42.624 logback [Thread-11] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+20:45:42.626 logback [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:45:42.641 logback [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
